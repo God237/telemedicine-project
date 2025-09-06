@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*home page styling for mobile screens */
+body{
+    background-image: url(images/instru.jpg);
+    background-size: cover;
+    height: 500vh;
+    background-attachment: fixed;
+    width: 340px;
+    backdrop-filter: blur(10px);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;                                                                                                                             ;
+}
+
+
+#pic{
+    object-fit: cover;
+    width: 80%;
+    height: 40vh;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.head p{
+    text-align: center;
+    font-size: 26px;
+    font-family: open sans;
+    font-weight: 750;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.logo img{
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 35px;
+    border-radius: 40px;
+}
+
+.row p{
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    margin-left: 23px;
+}
+
+h5{
+    font-weight: 600;
+    position: absolute;
+    bottom:  190px;
+    left:  23px;
+}
+
+.button {
+    padding: 8px 18px;
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+    border-color: black;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.button:active {
+    background-color:  aquamarine;
+    transform: translateY(4px);
+}
+.user-type{
+    margin-right: 10px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+/*responsiveness on screen size 350px*/
+@media (min-width: 350px){
+    body{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    }
+    .logo img{
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 50px;
+    border-radius: 40px;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    }
+    
+}
+
+/*responsiveness on screen size 375px*/
+@media (min-width: 375px){
+    #doctor-btn, #patient-btn, #admin-btn{
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+    }
+
+    h5{
+    position: absolute;
+    bottom:  160px;
+    left:  33px; 
+    }
+    .logo img{
+    position: absolute;
+    left: 12px;
+    top: 20px;
+    width: 50px;
+    }   
+    .head p{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 725;
+    }
+    #pic{
+        justify-content: center;
+        align-items: center;
+    }
+    .row p{
+    margin-left: 30px;
+    margin-top: 18px;
+}
+}
+
+/*responsiveness on screen size 400px*/
+@media (min-width: 400px) {
+    .logo img{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 60px;
+    }
+
+}
+
+/*responsiveness on screen size 425px*/
+@media (min-width: 425px) {
+    .head p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 725;
+    }
+    .row p{
+        font-size: 15px;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    position: relative;
+    bottom: 5px;
+    left: 65px;
+    }
+    h5{
+        position: absolute;
+        bottom: 150px;
+    }
+}
+
+/*responsiveness on screen size 456px*/
+@media (min-width: 456px) {
+    #pic{
+    width: 85%;
+    height: 45vh;
+    }
+    .logo img{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 70px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 40px;
+    left:7 0px;
+    }
+    h5{
+    position: relative;
+    bottom: 40px;
+    left: 35px;
+    }
+    body{
+    backdrop-filter: blur(10px);
+    height: 600px;
+    }
+}
+
+/*responsiveness on screen size 477px*/
+@media (min-width: 477px) {
+    .logo img{
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    width: 70px;
+    }
+    .row p{
+        line-height: 1.4rem;
+        word-spacing: 0.4rem;
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+    #pic{
+        background-size: 100% 500px;
+    }
+    .head p{
+        margin-left: 12px;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    position: relative;
+    bottom: 30px;
+    left: 65px;
+    }
+    h5{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    }
+}
+
+/*responsiveness on screen size 488px*/
+@media (min-width: 488px) {
+    .logo img{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 38px;
+    }
+    .head p{
+        font-size: 27px;
+        margin-left: 20px;
+    }
+    #pic{
+    width: 85%;
+    height: 50vh;
+    }
+    .row p{
+    font-size: 17px;
+    line-height: 1.7rem;
+    position: relative;
+    left: 10px;
+    }
+    .button{
+        position: absolute;
+        bottom: 100px;
+    }
+}
+
+/*responsiveness on screen size 520px*/
+@media (min-width: 520px){
+    #pic{
+    height: 55vh;
+    }
+    .head p{
+        font-size: 28px;
+        margin-left: 40px;
+    }
+    .logo img{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 48px;
+    }
+    .row p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    }
+    h5{
+    position: relative;
+    bottom: 35px;
+    left: 40px;
+    }
+}
+
+/*responsiveness on screen size 560px*/
+@media (min-width: 560px) {
+    .logo img{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    width: 65px;
+    }
+    .head p{
+        font-size: 28px;
+        margin-left: 60px;
+        padding-top: 26px;
+    }
+    #pic{
+    width: 80%;
+    height: 55vh;
+    margin-left: 50px;
+    margin-top: 33px;
+    }
+    .button{
+    margin-bottom: 10px;
+    }
+    body{
+    background-image: url(images/instru.jpg);
+    height: 1000vh;
+    width: 340px;
+    backdrop-filter: blur(10px);
+    height: 800px;
+    width: 100%;                                                                                                                          ;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    margin-bottom: 100px;
+    }
+    h5{
+    position: relative;
+    bottom: 15px;
+    }
+}
+
+/*responsiveness on screen size 580px*/
+@media (min-width: 580px){
+    h5{
+    position: relative;
+    bottom: 40px;   
+    }
+    .user-type{
+    position: relative;
+    bottom: 50px;
+    }
+}
+
+/*responsiveness on screen size 638px*/
+@media (min-width: 638px){
+    .head p{
+        font-size: 33px;
+        margin-left: 40px;
+    }
+    .row p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    word-spacing: 15px;
+    margin-left: 70px;
+    }
+    .logo img{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    width: 60px;
+    }
+    #pic{
+    width: 78%;
+    height: 68vh;
+    margin-left: 70px;
+    margin-top: 20px;
+    }
+}
+
+/*responsiveness on screen size 690px*/
+@media (min-width: 690px){
+    #pic{
+    width: 78%;
+    height: 70vh;
+    }
+    .logo img{
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    width: 60px;
+    }
+}
+
+/*responsiveness on screen size 746px*/
+@media (min-width: 746px){
+    .head p{
+    font-size: 35px;
+    margin-left: 30px;
+    }
+    .logo img{
+    position: absolute;
+    left: 50px;
+    top: 27px;
+    }
+    #pic{
+    width: 70%;
+    height: 70vh;
+    position: relative;
+    left: 45px;
+    }
+    .row p{
+    font-size: 17px;
+    position: relative;
+    left: 50px;
+    }
+    .user-type{
+        position: relative;
+        bottom: 20px;
+        left: 150px;
+        justify-content: space-between;
+    }
+    h5{
+      position: relative;
+      left: 300px;  
+    }
+}
+
+/*responsiveness on screen size 768px*/
+@media (min-width: 768px){
+    #pic{
+    width: 40%;
+    height: 50vh;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    }
+    .head p{
+    font-size: 40px;
+    position: relative;
+    left: 18px;
+    }
+    .row p{
+    font-size: 17px;
+    line-height: 32px;
+    word-spacing: 3px;
+    position: absolute;
+    left: 315px;
+    top: 140px;
+    }
+    h5{
+    position: relative;
+    left: 480px;
+    bottom: 170px;
+    }
+    #doctor-btn, #patient-btn, #admin-btn{
+    height: 40px;
+    width: 90px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 160px;
+    left: 350px;
+    }
+    .logo img{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: 60px;
+    }
+}
+
+/*responsiveness on screen size 782px*/
+@media (min-width: 782px){
+    .logo img{
+    position: absolute;
+    left: 50px;
+    top: 33px;
+    width: 60px;
+    }
+    .row p{
+    position: absolute;
+    left: 320px;
+    }
+}
+
+/*responsiveness on screen size 800px*/
+@media (min-width: 800px){
+    .row p{
+    position: absolute;
+    left: 350px;
+    }
+}
+
+/*responsiveness on screen size 826px*/
+@media (min-width: 826px){
+    .row p{
+    position: absolute;
+    left: 368px;
+    }
+    .logo img{
+    position: absolute;
+    left: 55px;
+    top: 30px;
+    width: 70px;
+    }
+    h5{
+    position: relative;
+    left: 525px;
+    bottom: 160px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 150px;
+    left: 380px;
+    }
+}
+
+/*responsiveness on screen size 854px*/
+@media (min-width: 854px){
+    .row p{
+    line-height: 35px;
+    position: absolute;
+    top: 135px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 150px;
+    }
+    h5{
+    position: relative;
+    bottom: 160px;
+    }
+    .logo img{
+    position: absolute;
+    left: 50px;
+    top: 35px;
+    width: 60px;
+    }
+    .head p{
+    font-size: 42px;
+    margin-right: 33px;
+    }
+    body{
+    background-image: url(images/instru.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    width: 340px;
+    backdrop-filter: blur(10px);
+    height: 650px;
+    width: 100%;    
+    }
+}
+
+/*responsiveness on screen size 875px*/
+@media (min-width: 875px){
+    .row p{
+    line-height: 30px;
+    word-spacing: 10px;
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    }
+    h5{
+    position: relative;
+    bottom: 160px;   
+    }
+}
+
+/*responsiveness on screen size 906px*/
+@media (min-width: 906px){
+    .logo img{
+    position: absolute;
+    left: 75px;
+    top: 35px;
+    width: 60px;   
+    }
+    .row p{
+    position: absolute;
+    top: 140px;
+    left: 400px;
+    }
+    h5{
+    position: relative;
+    bottom: 180px; 
+    left: 550px;      
+    }
+    .user-type{
+    position: relative;
+    bottom: 180px; 
+    left: 400px;  
+    }
+}
+
+/*responsiveness on screen size 958px*/
+@media (min-width: 958px){
+    .logo img{
+    position: absolute;
+    left: 85px;
+    top: 35px;
+    width: 70px;   
+    }
+    #pic{
+    width: 40%;
+    height: 55vh;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    }
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 410px;
+    line-height: 35px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 175px; 
+    left: 440px;      
+    }
+    h5{
+    position: relative;
+    bottom: 188px; 
+    left: 590px;   
+    }
+}
+
+/*responsiveness on screen size 988px*/
+@media (min-width: 988px){
+    .logo img{
+    position: absolute;
+    left: 108px; 
+    top: 30px;  
+    }
+    .user-type{
+    position: relative;
+    bottom: 170px; 
+    left: 450px;      
+    }
+    h5{
+    position: relative;
+    bottom: 180px;
+    left: 585px;        
+    }
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 420px;
+    line-height: 35px;
+    font-size: 20px;
+    }
+}
+
+/*responsiveness on screen size 1043px*/
+@media (min-width: 1043px){
+    .head p{
+    font-size: 42px;
+    margin-right: 45px;  
+    }
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    line-height: 38px;
+    font-size: 23px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 140px; 
+    left: 500px;      
+    }
+    h5{
+    position: relative;
+    bottom: 150px;
+    left: 650px;        
+    }
+}
+
+/*responsiveness on screen size 1062px*/
+@media (min-width: 1062px){
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 458px;
+    line-height: 38px;
+    font-size: 21px;
+    }
+    .user-type{
+    position: relative;
+    bottom: 160px;      
+    }
+    h5{
+    position: relative;
+    bottom: 170px;       
+    } 
+}
+
+/*responsiveness on screen size 1126px*/
+@media (min-width: 1126px){
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 490px;
+    }
+    .logo img{
+    position: absolute;
+    left: 150px; 
+    top: 28px;  
+    }
+    body{
+        backdrop-filter: blur(8px);
+    }
+    h5{
+        font-size: 21px;
+    }
+}
+
+
+/*responsiveness on screen size 1180px*/
+@media (min-width: 1180px){
+    .row p{
+    position: absolute;
+    top: 130px;
+    left: 540px;
+    }
+    .user-type{
+    position: relative;
+    left: 550px;      
+    }
+    .logo img{
+    position: absolute;
+    left: 170px; 
+    top: 28px;  
+    }
+}
