@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Sign-up</title>
+    <title> Sign-up</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
                     <!--doctor signup-->
-    <div class="doctor-signup" style="display: none;">
+    <div  id="doctorform" class="form-container">
         <h1>Sign-up Doc.</h1>
         
-        <form id="doctorform" action="submit" method="post">
+        <form action="submit" method="post">
     
             <input type="text" placeholder="Full Name" required> <br><br>
             <input type="email"  placeholder="Professional Email"><br><br>
             <input type="text" placeholder="Specialty" required><br><br>
+            <input type="number" placeholder="Medical License No.">
             <input type="number" placeholder="Years of Experience"><br> <br>
             <input type="text" placeholder="Hospital Affiliation"><br><br>
             <label for="idupload">Upload National ID:</label>
@@ -29,8 +30,6 @@
             <input type="password" id="password" name="password" placeholder="Confirm password" required><br><br>
             <i class="fa fa-eye" id="toogle-password"></i>
 
-
-            
             <button type="submit" class="btn">Sign-up</button> 
             <div class="login">
                 <p>Already have an account? <a href="#">Login</a></p>
@@ -41,9 +40,9 @@
 
 
                     <!--patient signup-->
-    <div class="patient-signup" style="display: none;">
+    <div  id="patientform"  class="form-container">
         <h1>Patient Sign-up</h1>
-            <form id="patientform" action="" method="post">
+            <form action="" method="post">
             <input type="text" placeholder="Full Name" required> <br><br>
             <input type="email"  placeholder="Email Address"><br><br>
             <input type="tel" placeholder="Phone Number" required><br><br>
@@ -64,16 +63,14 @@
             </form>
     </div>
 
-    <div class="admin-signup">
-        <form id="adminform" action="" method="POST">
+    <div  id="adminform" class="form-container">
+        <form action="" method="POST">
             <h1>Sign-up Admin</h1>
 
             <input type="text" placeholder="Username" required> <br><br>
             <input type="email"  placeholder="Email Address"><br><br>
             <input type="tel" placeholder="Phone Number" required><br><br>
             <input type="datetime" placeholder="Date of Birth"><br> <br>
-
-
 
             <input type="password" id="password" name="password" placeholder="password" required><br><br>
             <i class="fa fa-eye" id="toogle-password"></i>
@@ -88,18 +85,18 @@
         </form>
     </div>
 
-
-    <script>
-        //get URL parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const formParam = urlParams.get('form');
-
-        //Display correspondingform
-        if (formParam){
-            document.getElementById('formParam').style.display = 'block';
-        }
-    </script>
-
+<script>
+    function showForm(formID){
+        document.querySelectorAll('form-container').forEach(
+            form => {
+                form.classList.remove('active')
+            }
+        )
+    document.getElementById("doctorform").classList.remove("active");
+    document.getElementById("patientform").classList.remove("active");
+    document.getElementById("adminform").classList.remove("active");
+}
+</script>
 
 </body>
 </html>

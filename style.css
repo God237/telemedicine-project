@@ -30,7 +30,7 @@ body{
 
 .head p{
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-family: open sans;
     font-weight: 750;
     padding-left: 20px;
@@ -54,33 +54,32 @@ body{
 h5{
     font-weight: 600;
     position: absolute;
-    bottom:  190px;
-    left:  23px;
+    bottom:  170px;
+    left:  47px;
 }
 
-.button {
+.btn {
+    display: inline-block;
     padding: 8px 18px;
+    margin: 3px;
     font-size: 14px;
     align-items: center;
     cursor: pointer;
     border-color: black;
-    background-color: black;
+    background: black;
+    color: aquamarine;
     border-radius: 20px;
     position: relative;
     top: 10px;
     left: 20px;
 }
 
-.button:active {
+.btn:active {
     background-color:  aquamarine;
     transform: translateY(4px);
 }
 .user-type{
     margin-right: 10px;
-}
-
-button a{
-    text-decoration: none;
 }
 
 /*responsiveness on screen size 350px*/
@@ -96,7 +95,7 @@ button a{
     width: 50px;
     border-radius: 40px;
     }
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     position: relative;
     bottom: 10px;
     left: 30px;
@@ -106,7 +105,7 @@ button a{
 
 /*responsiveness on screen size 375px*/
 @media (min-width: 375px){
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     position: relative;
     bottom: 10px;
     left: 40px;
@@ -159,7 +158,7 @@ button a{
     .row p{
         font-size: 15px;
     }
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     position: relative;
     bottom: 5px;
     left: 65px;
@@ -218,7 +217,7 @@ button a{
     .head p{
         margin-left: 12px;
     }
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     position: relative;
     bottom: 30px;
     left: 65px;
@@ -277,7 +276,7 @@ button a{
     font-size: 18px;
     line-height: 1.7rem;
     }
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     position: relative;
     bottom: 20px;
     left: 80px;
@@ -319,7 +318,7 @@ button a{
     height: 800px;
     width: 100%;                                                                                                                          ;
     }
-    #doctor-btn, #patient-btn, #admin-btn{
+    .btn{
     margin-bottom: 100px;
     }
     h5{
@@ -421,7 +420,7 @@ button a{
     height: 50vh;
     position: relative;
     top: 20px;
-    left: 10px;
+    left: -30px;
     }
     .head p{
     font-size: 40px;
@@ -429,21 +428,17 @@ button a{
     left: 18px;
     }
     .row p{
-    font-size: 17px;
+    font-size: 18px;
     line-height: 32px;
     word-spacing: 3px;
     position: absolute;
-    left: 315px;
+    left: 290px;
     top: 140px;
     }
     h5{
     position: relative;
-    left: 480px;
+    left: 440px;
     bottom: 170px;
-    }
-    #doctor-btn, #patient-btn, #admin-btn{
-    height: 40px;
-    width: 90px;
     }
     .user-type{
     position: relative;
@@ -462,13 +457,13 @@ button a{
 @media (min-width: 782px){
     .logo img{
     position: absolute;
-    left: 50px;
+    left: 40px;
     top: 33px;
     width: 60px;
     }
     .row p{
     position: absolute;
-    left: 320px;
+    left: 300px;
     }
 }
 
@@ -476,7 +471,7 @@ button a{
 @media (min-width: 800px){
     .row p{
     position: absolute;
-    left: 350px;
+    left: 300px;
     }
 }
 
@@ -484,7 +479,7 @@ button a{
 @media (min-width: 826px){
     .row p{
     position: absolute;
-    left: 368px;
+    left: 320px;
     }
     .logo img{
     position: absolute;
@@ -494,7 +489,7 @@ button a{
     }
     h5{
     position: relative;
-    left: 525px;
+    left: 480px;
     bottom: 160px;
     }
     .user-type{
@@ -555,6 +550,26 @@ button a{
     }
 }
 
+/*responsiveness on screen size 890px*/
+@media (min-width: 875px){
+    .row p{
+    line-height: 35px;
+    word-spacing: 10px;
+    position: absolute;
+    top: 140px;
+    left: 350px;
+    }
+    .btn{
+    position: relative;
+    top: 40px;
+    left: 55px;
+    }
+    h5{
+    position: relative;
+    bottom: 135px;   
+    }
+}
+
 /*responsiveness on screen size 906px*/
 @media (min-width: 906px){
     .logo img{
@@ -566,12 +581,12 @@ button a{
     .row p{
     position: absolute;
     top: 140px;
-    left: 400px;
+    left: 350px;
     }
     h5{
     position: relative;
-    bottom: 180px; 
-    left: 550px;      
+    bottom: 160px; 
+    left: 500px;      
     }
     .user-type{
     position: relative;
@@ -599,16 +614,16 @@ button a{
     position: absolute;
     top: 130px;
     left: 410px;
-    line-height: 35px;
+    line-height: 38px;
     }
     .user-type{
     position: relative;
-    bottom: 175px; 
-    left: 440px;      
+    bottom: 188px; 
+    left: 470px;      
     }
     h5{
     position: relative;
-    bottom: 188px; 
+    bottom: 170px; 
     left: 590px;   
     }
 }
@@ -649,17 +664,17 @@ button a{
     position: absolute;
     top: 130px;
     left: 430px;
-    line-height: 38px;
-    font-size: 23px;
+    line-height: 40px;
+    font-size: 22px;
     }
     .user-type{
     position: relative;
-    bottom: 140px; 
-    left: 500px;      
+    bottom: 180px; 
+    left: 520px;      
     }
     h5{
     position: relative;
-    bottom: 150px;
+    bottom: 170px;
     left: 650px;        
     }
 }
@@ -675,11 +690,11 @@ button a{
     }
     .user-type{
     position: relative;
-    bottom: 160px;      
+    bottom: 170px;      
     }
     h5{
     position: relative;
-    bottom: 170px;       
+    bottom: 155px;       
     } 
 }
 
@@ -719,5 +734,75 @@ button a{
     position: absolute;
     left: 170px; 
     top: 28px;  
+    }
+}
+
+
+/*responsiveness on screen size 1333px*/
+@media (min-width: 1333px){
+    .logo img{
+    position: absolute;
+    left: 240px; 
+    top: 28px;  
+    }
+    .row p{
+    font-size: 26px;
+    line-height: 40px;
+    word-spacing: 17px;
+    position: absolute;
+    left: 580px;
+    top: 150px;
+    }
+    .user-type, h5{
+    position: relative;
+    left: 650px;
+    bottom: 195px; 
+    }
+    .user-type{
+    position: relative;
+    bottom: 200px; 
+    }
+    h5{
+        font-size: 25px;
+    }
+    #pic{
+        border-radius: 50px;
+        height: 58vh;
+    }
+}
+
+/*responsiveness on screen size 1361px*/
+@media (min-width: 1361px){
+    .row p{
+    position: absolute;
+    left: 600px;
+    top: 150px;
+    font-size: 20px;
+    word-spacing: 15px;
+    line-height: 40px;
+    }
+    .user-type{
+    position: relative;
+    left: 660px;
+    bottom: 195px;      
+    }
+    h5{
+    position: relative;
+    bottom: 190px;  
+    left: 680px;
+    font-size: 25px;    
+    } 
+    .logo img{
+    position: absolute;
+    left: 240px; 
+    top: 25px; 
+    width: 88px; 
+    }
+    #pic{
+    width: 40%;
+    height: 70vh;
+    }
+    body{
+        backdrop-filter: blur(5px);
     }
 }
