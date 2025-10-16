@@ -46,16 +46,10 @@ body{
 }
 
 .row p{
-    line-height: 1.4rem;
-    font-size: 0.9rem;
-    margin-left: 23px;
-}
-
-h5{
-    font-weight: 600;
-    position: absolute;
-    bottom:  170px;
-    left:  47px;
+    line-height: 1.6rem;
+    font-size: 13.5px;
+    margin-left: 6px;
+    font-family:   Geneva, Verdana, sans-serif;
 }
 
 .btn {
@@ -70,8 +64,8 @@ h5{
     color: aquamarine;
     border-radius: 20px;
     position: relative;
-    top: 10px;
-    left: 20px;
+    bottom: 40px;
+    left: 47px;
 }
 
 .btn:active {
@@ -109,12 +103,6 @@ h5{
     position: relative;
     bottom: 10px;
     left: 40px;
-    }
-
-    h5{
-    position: absolute;
-    bottom:  160px;
-    left:  33px; 
     }
     .logo img{
     position: absolute;
@@ -163,10 +151,6 @@ h5{
     bottom: 5px;
     left: 65px;
     }
-    h5{
-        position: absolute;
-        bottom: 150px;
-    }
 }
 
 /*responsiveness on screen size 456px*/
@@ -185,11 +169,6 @@ h5{
     position: relative;
     bottom: 40px;
     left:7 0px;
-    }
-    h5{
-    position: relative;
-    bottom: 40px;
-    left: 35px;
     }
     body{
     backdrop-filter: blur(10px);
@@ -222,11 +201,7 @@ h5{
     bottom: 30px;
     left: 65px;
     }
-    h5{
-    position: relative;
-    bottom: 40px;
-    left: 30px;
-    }
+
 }
 
 /*responsiveness on screen size 488px*/
@@ -343,7 +318,7 @@ h5{
 @media (min-width: 638px){
     .head p{
         font-size: 33px;
-        margin-left: 40px;
+        margin-left: 35px;
     }
     .row p{
     font-size: 18px;
@@ -353,15 +328,9 @@ h5{
     }
     .logo img{
     position: absolute;
-    left: 30px;
+    left: 25px;
     top: 25px;
-    width: 60px;
-    }
-    #pic{
-    width: 78%;
-    height: 68vh;
-    margin-left: 70px;
-    margin-top: 20px;
+    width: 55px;
     }
 }
 
